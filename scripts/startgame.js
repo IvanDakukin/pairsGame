@@ -15,7 +15,7 @@ export const startGame = (difficult) => {
 	const cardsIcons = shuffleArray(duplicateArray(createIconsArray(difficult)));
 	const restartBtn = document.createElement('button');
 	const eroPic = document.createElement('div');
-	eroPic.style.backgroundImage = `url(../assets/${difficult}.jpg)`;
+	eroPic.style.backgroundImage = `url(./assets/${difficult}.jpg)`;
 	const hiddingCards = [];
 	for(let i = 0; i < difficult / 2; i++){
 		let hiddingCard = createHiddingCard('close');
